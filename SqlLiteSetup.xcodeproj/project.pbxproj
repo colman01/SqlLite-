@@ -16,6 +16,8 @@
 		E4A96FBB14EFDDD20021AB80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A96FBA14EFDDD20021AB80 /* ViewController.m */; };
 		E4A96FBE14EFDDD20021AB80 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A96FBC14EFDDD20021AB80 /* ViewController_iPhone.xib */; };
 		E4A96FC114EFDDD20021AB80 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A96FBF14EFDDD20021AB80 /* ViewController_iPad.xib */; };
+		E4A96FC914EFDE380021AB80 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A96FC714EFDE380021AB80 /* libsqlite3.0.dylib */; };
+		E4A96FCA14EFDE380021AB80 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A96FC814EFDE380021AB80 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,18 @@
 		E4A96FA714EFDDD20021AB80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E4A96FA914EFDDD20021AB80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4A96FAB14EFDDD20021AB80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E4A96FAF14EFDDD20021AB80 /* SqlLiteSetup-Info.plist */ = {isa = PBXFileReference; path = "SqlLiteSetup-Info.plist"; sourceTree = "<group>"; };
+		E4A96FAF14EFDDD20021AB80 /* SqlLiteSetup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqlLiteSetup-Info.plist"; sourceTree = "<group>"; };
 		E4A96FB114EFDDD20021AB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4A96FB314EFDDD20021AB80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4A96FB514EFDDD20021AB80 /* SqlLiteSetup-Prefix.pch */ = {isa = PBXFileReference; path = "SqlLiteSetup-Prefix.pch"; sourceTree = "<group>"; };
-		E4A96FB614EFDDD20021AB80 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4A96FB514EFDDD20021AB80 /* SqlLiteSetup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqlLiteSetup-Prefix.pch"; sourceTree = "<group>"; };
+		E4A96FB614EFDDD20021AB80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4A96FB714EFDDD20021AB80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4A96FB914EFDDD20021AB80 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		E4A96FB914EFDDD20021AB80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4A96FBA14EFDDD20021AB80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E4A96FBD14EFDDD20021AB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		E4A96FC014EFDDD20021AB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		E4A96FC714EFDE380021AB80 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E4A96FC814EFDE380021AB80 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A96FC914EFDE380021AB80 /* libsqlite3.0.dylib in Frameworks */,
+				E4A96FCA14EFDE380021AB80 /* libsqlite3.dylib in Frameworks */,
 				E4A96FA814EFDDD20021AB80 /* UIKit.framework in Frameworks */,
 				E4A96FAA14EFDDD20021AB80 /* Foundation.framework in Frameworks */,
 				E4A96FAC14EFDDD20021AB80 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +58,8 @@
 		E4A96F9814EFDDD20021AB80 = {
 			isa = PBXGroup;
 			children = (
+				E4A96FC714EFDE380021AB80 /* libsqlite3.0.dylib */,
+				E4A96FC814EFDE380021AB80 /* libsqlite3.dylib */,
 				E4A96FAD14EFDDD20021AB80 /* SqlLiteSetup */,
 				E4A96FA614EFDDD20021AB80 /* Frameworks */,
 				E4A96FA414EFDDD20021AB80 /* Products */,
